@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "940721301475",
+    "project_id": "oncology-88f21",
+    "storage_bucket": "oncology-88f21.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:940721301475:android:92f5f82dd005e22f2de2d6",
+        "android_client_info": {
+          "package_name": "com.indiaoncology"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "940721301475-0co4bv7q2gdjl6iki5ks93o2fu843prg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.indiaoncology",
+            "certificate_hash": "cc64b2ab4a2a363090b62c78d49766f840813504"
+          }
+        },
+        {
+          "client_id": "940721301475-ljeo8r2chrn7e07v27obe8ahhm8nvlvm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCLyk6POZBjajUhlezoSxAZy-UUSJRLXns"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "940721301475-ljeo8r2chrn7e07v27obe8ahhm8nvlvm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

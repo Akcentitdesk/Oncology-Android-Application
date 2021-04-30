@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="UnusedAttribute,ContentDescription">
+
+    <RelativeLayout
+        android:id="@+id/llData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        android:background="@drawable/background_transparent_main">
+
+        <ImageView
+            android:id="@+id/ivtype"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_30sdp"
+            android:padding="@dimen/_5sdp"
+            android:scaleType="fitXY"
+            android:src="@drawable/type1" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ivtype"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:fontFamily="@font/roboto_medium"
+            android:gravity="center"
+            android:letterSpacing="0.05"
+            android:maxWidth="@dimen/_90sdp"
+            android:maxLines="1"
+            android:text="Lung Cancer"
+            android:textColor="@color/colorPurple"
+            android:textSize="@dimen/_11ssp" />
+    </RelativeLayout>
+</layout>

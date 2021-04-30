@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <LinearLayout
+        android:id="@+id/llRoot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="@dimen/_35sdp"
+        android:layout_marginEnd="@dimen/_35sdp"
+        android:background="@drawable/back_white"
+        android:elevation="@dimen/_2sdp"
+        android:orientation="vertical"
+        tools:ignore="UnusedAttribute">
+
+        <TextView
+            android:id="@+id/llcamera"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:fontFamily="@font/roboto_medium"
+            android:gravity="center"
+            android:letterSpacing="0.03"
+            android:padding="@dimen/_15sdp"
+            android:text="Take picture"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14ssp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:background="@color/color_cccccc" />
+
+        <TextView
+            android:id="@+id/llGallery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_medium"
+            android:gravity="center"
+            android:letterSpacing="0.03"
+            android:padding="@dimen/_15sdp"
+            android:text="Choose from gallery"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14ssp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:background="@color/color_cccccc" />
+
+
+        <TextView
+            android:id="@+id/tvcancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_6sdp"
+            android:fontFamily="@font/roboto_medium"
+            android:gravity="center"
+            android:letterSpacing="0.03"
+            android:padding="@dimen/_15sdp"
+            android:text="Cancel"
+            android:textColor="@color/colorRed"
+            android:textSize="@dimen/_14ssp" />
+    </LinearLayout>
+
+</layout>

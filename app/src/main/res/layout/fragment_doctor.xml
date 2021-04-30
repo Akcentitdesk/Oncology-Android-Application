@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/menubar"
+            layout="@layout/toolbar" />
+
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/swipeRefreshingLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.core.widget.NestedScrollView
+                android:id="@+id/mainLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/menuBar"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <androidx.viewpager.widget.ViewPager
+                        android:id="@+id/pager"
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/_120sdp"
+                        android:background="@color/transparent" />
+
+                    <com.google.android.material.tabs.TabLayout
+                        android:id="@+id/tab_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:tabBackground="@drawable/tab_selector"
+                        app:tabGravity="center"
+                        app:tabIndicatorHeight="0dp" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:gravity="center"
+                        android:lineSpacingExtra="@dimen/_2sdp"
+                        android:text="Choose from Best Oncologist"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_13ssp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/roboto_regular"
+                        android:gravity="center"
+                        android:lineSpacingExtra="@dimen/_1sdp"
+                        android:paddingTop="@dimen/_5sdp"
+                        android:text="You can find specialists in your type of cancer"
+                        android:textColor="@color/lightBlack"
+                        android:textSize="@dimen/_12ssp" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvcategory"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginBottom="@dimen/_10sdp" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvDoctors"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:layout_marginBottom="@dimen/_10sdp" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_55sdp"
+                        android:background="@color/colorAccent"
+                        android:padding="@dimen/_15sdp">
+
+                        <ImageView
+                            android:id="@+id/ivhead"
+                            android:layout_width="@dimen/_90sdp"
+                            android:layout_height="@dimen/_100sdp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentBottom="true"
+                            android:elevation="@dimen/_2sdp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/opinion" />
+
+
+                        <TextView
+                            android:id="@+id/head"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            android:layout_toStartOf="@+id/ivhead"
+                            android:fontFamily="@font/roboto_medium"
+                            android:text="Tell us more about your condition"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_16ssp" />
+
+                        <TextView
+                            android:id="@+id/subhead"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/head"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            android:layout_toStartOf="@+id/ivhead"
+                            android:fontFamily="@font/roboto_regular"
+                            android:letterSpacing=".05"
+                            android:lineSpacingExtra="@dimen/_2sdp"
+                            android:text="One of our care manager will reach out to guide you with your case."
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_10ssp" />
+
+                        <TextView
+                            android:id="@+id/btnGetOpinion"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/subhead"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:background="@drawable/button_second_main"
+                            android:fontFamily="@font/roboto_medium"
+                            android:gravity="center"
+                            android:letterSpacing=".03"
+                            android:paddingStart="@dimen/_12sdp"
+                            android:paddingTop="@dimen/_5sdp"
+                            android:paddingEnd="@dimen/_12sdp"
+                            android:paddingBottom="@dimen/_5sdp"
+                            android:text="Continue"
+                            android:textAllCaps="true"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/_10ssp" />
+
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+        <!--
+         <include
+             android:id="@+id/shimmerEffect"
+             layout="@layout/shimmer_dummy_layout" />
+ -->
+    </LinearLayout>
+</layout>

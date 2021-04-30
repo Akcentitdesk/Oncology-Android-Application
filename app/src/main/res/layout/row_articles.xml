@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="UnusedAttribute,ContentDescription">
+
+    <RelativeLayout
+        android:id="@+id/llData"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        android:background="@drawable/back_white"
+        android:elevation="@dimen/_1sdp">
+
+        <ImageView
+            android:id="@+id/ivArticle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_alignParentTop="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/blog1" />
+
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ivArticle"
+            android:layout_gravity="center"
+            android:fontFamily="@font/roboto_medium"
+            android:lineSpacingExtra="@dimen/_2sdp"
+            android:maxLines="1"
+            android:padding="@dimen/_7sdp"
+            android:text="Non-Vegetarian Meal Plan"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/_10ssp" />
+
+        <TextView
+            android:id="@+id/tvDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvTitle"
+            android:layout_gravity="center"
+            android:fontFamily="@font/roboto_regular"
+            android:lineSpacingExtra="@dimen/_1sdp"
+            android:maxLines="7"
+            android:paddingStart="@dimen/_7sdp"
+            android:paddingEnd="@dimen/_7sdp"
+            android:paddingBottom="@dimen/_2sdp"
+            android:text="A cancer diet is different from other popular diets in many aspects. Most popular diets focus on weight loss, whereas a cancer diet focuses on weight maintenance. This is because cancer and the side-effects of cancer treatment can lead to weight loss on its own."
+            android:textColor="@color/lightGray"
+            android:textSize="@dimen/_9ssp" />
+
+        <TextView
+            android:id="@+id/tvreadmore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvDescription"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:fontFamily="@font/roboto_light"
+            android:lineSpacingExtra="@dimen/_2sdp"
+            android:maxLines="2"
+            android:padding="@dimen/_7sdp"
+            android:text="Read More ..."
+            android:textColor="@color/color_read_more"
+            android:textSize="@dimen/_9ssp" />
+    </RelativeLayout>
+
+</layout>

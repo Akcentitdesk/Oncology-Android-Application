@@ -1,0 +1,183 @@
+<resources>
+
+    <string name="web_client_id">940721301475-ljeo8r2chrn7e07v27obe8ahhm8nvlvm.apps.googleusercontent.com</string>
+    <string name="facebook_app_id">4170414503002367</string>
+    <string name="fb_login_protocol_scheme">fb4170414503002367</string>
+
+    <string name="app_name">Oncology</string>
+    <string name="please_wait">Please wait…</string>
+    <string name="internet_title">No Internet</string>
+    <string name="no_internet">You are offline. Make sure <i>Wifi</i> or <i>cellular data</i> is turned on and then try again.</string>
+    <string name="email">Email</string>
+    <string name="mobile">Mobile Number</string>
+    <string name="address">Address</string>
+    <string name="pinCode">Pin Code</string>
+    <string name="city">City</string>
+    <string name="state">State</string>
+    <string name="Rs">\u20B9</string>
+    <string name="terms_conditions"><u>Terms &amp; Conditions</u></string>
+    <string name="signup"><u>Signup</u></string>
+    <string name="mobile_email">Mobile number/Email</string>
+    <string name="mobile_">Enter your mobile number</string>
+    <string name="empty_name">Please enter your name.</string>
+    <string name="invalid_name">Please enter valid name.</string>
+    <string name="empty_email">Please enter your email.</string>
+    <string name="invalid_email">Please enter valid email.</string>
+    <string name="invalid_password">Password must be at least 8 characters.</string>
+    <string name="password_not_match">Password and confirm password does not match.</string>
+    <string name="invalid_mobile">Please enter valid mobile number.</string>
+    <string name="invalid_otp">Please enter valid OTP.</string>
+    <string name="empty_otp">Please enter OTP.</string>
+    <string name="empty_mobile">Please enter your mobile number.</string>
+    <string name="empty_password">Please enter your password.</string>
+    <string name="already_user">Have an account? Login</string>
+    <string name="resend_code">Didn\'t get the code? Resend code</string>
+    <string name="resend_otp"><u>Resend OTP</u></string>
+    <string name="login">Login</string>
+    <string name="otp">OTP</string>
+    <string name="forgot_password"><u>Forgot Password?</u></string>
+    <string name="new_password">New Password</string>
+    <string name="new_user_sign_up">Don\'t have an account? Sign Up</string>
+    <string name="or">OR</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="send_otp">Send OTP</string>
+    <string name="resetPassword">Reset Password</string>
+    <string name="verify_otp">Verify OTP</string>
+    <string name="faq">FAQ</string>
+    <string name="view_all">View All</string>
+    <string name="doctors">Doctors</string>
+    <string name="terms_and_conditions">By signing up or logging in, you agree to our <u>Terms and Conditions</u></string>
+    <string name="password">Password</string>
+    <string name="enter_password">Enter your password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="enter_name">Enter your name</string>
+    <string name="enter_email">Enter your email address</string>
+    <string name="my_account">Account</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="logout">Logout</string>
+    <string name="no_internet_connection">No internet connection</string>
+    <string name="retry">Try Again</string>
+    <string name="share_experience">Share Experience</string>
+    <string name="experience">Experience</string>
+    <string name="specializations">Specializations</string>
+    <string name="services">Services</string>
+    <string name="awards_and_recognitions">Awards and Recognitions</string>
+    <string name="memberships">Memberships</string>
+    <string name="registration">Registration</string>
+    <string name="book_appointment">Book Appointment</string>
+    <string name="doctor_profile">Doctor\'s Profile</string>
+    <string name="submit">Submit</string>
+    <string name="write_your_review_here">Write a comment.</string>
+    <string name="please_write_product_review_here">Please write your review here.</string>
+    <string name="empty_rating">Please provide rating.</string>
+    <string name="edit">Edit</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="select_patient">Select Patient</string>
+    <string name="add_new_patient">Add new Patient</string>
+    <string name="saved_patient">Saved Patient</string>
+    <string name="add_patient">Add Patient</string>
+    <string name="no_patient">No patient details available</string>
+    <string name="patient_details">Patient Details</string>
+    <string name="please_provide_following_patient_s_details">Please provide following patient\'s details :</string>
+    <string name="these_details_will_appear_on_the_final_test_report">These details will appear on the final test report.</string>
+    <string name="gender">Gender</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="save_continue">Save and Continue</string>
+    <string name="patient_name">Enter patient\'s name</string>
+    <string name="enter_age">Enter age</string>
+    <string name="get_in_touch">Get in Touch</string>
+    <string name="please_feel_free_to_contact_us_if_you_have_any_further_questions_or_concerns">Please feel free to contact us if you have any further questions or concerns</string>
+    <string name="empty_patient_name">Please enter patient\'s name.</string>
+    <string name="empty_patient_age">Please enter patient\'s age.</string>
+    <string name="empty_gender">Please select gender.</string>
+    <string name="update_patient">Update Patient detail</string>
+    <string name="no_data_found">No Data Found!</string>
+    <string name="organ_specialities">Organ Specialization</string>
+    <string name="expertise">Expertise</string>
+    <string name="manage_patient">Manage Patient</string>
+    <string name="my_appointments">My Appointments</string>
+    <string name="no_result_found">No Result Found!</string>
+    <string name="Continue">Continue</string>
+    <string name="select_date">Select Date</string>
+    <string name="select_slot">Select Slot</string>
+    <string name="article_detail">Article Details</string>
+    <string name="comments">Comments</string>
+    <string name="leave_comment">Leave Comment</string>
+    <string name="related_articles">Related Articles</string>
+    <string name="you_may_also_like">You may also like</string>
+    <string name="viewer_s_comment_on_this_article">Viewer\'s comment on this article</string>
+    <string name="post_comment">Post Comment</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="enter_message">Enter your message</string>
+    <string name="contact_details">Contact Details</string>
+    <string name="office_address">7/27, First Floor, Kirti Nagar Industrial Area, New Delhi, 110015</string>
+    <string name="phone">Phone</string>
+
+    <string name="empty_comment">Please enter comment.</string>
+    <string name="invalid_comment">Your comment should be greater than 8 characters.</string>
+    <string name="invalid_message">Please enter valid message.</string>
+    <string name="empty_message">Please write your message.</string>
+    <string name="empty_review">Please enter your review.</string>
+    <string name="invalid_review">Your review should be greater than 5 characters.</string>
+    <string name="confirm_appointment">Confirm Appointment</string>
+    <string name="clinic_name">Clinic Name</string>
+    <string name="clinic_location">Clinic Location</string>
+    <string name="consultation_fees">Consultation Fees</string>
+    <string name="date">Date</string>
+    <string name="time">Time</string>
+    <string name="booked_for">Patient</string>
+    <string name="appointment_id">Appointment Id</string>
+    <string name="appointment_status">Appointment Status</string>
+    <string name="appointment_review">Appointment Review</string>
+    <string name="cancel_appointment">Cancel Appointment</string>
+    <string name="appointment_details">Appointment Detail</string>
+    <string name="order_placed_successfully">Appointment Booked Successfully.</string>
+    <string name="booking_received_successfully">Booking request received successfully</string>
+    <string name="thank_you_for_placing_order_we_have_sent_you_an_sms_and_email_with_the_details">Thank you for placing order! We have sent you an SMS and Email with the details.</string>
+    <string name="view_details">View Details</string>
+    <string name="go_back_home">Go To Home</string>
+
+    <string name="contact_us_for_any_further_assistance">Contact us for any further assistance</string>
+    <string name="my_appointment">My Appointment</string>
+    <string name="order_desc_appointment">All your appointments will be displayed here.</string>
+    <string name="no_appointment_booked">You don\'t have any appointments</string>
+    <string name="about_us">About Us</string>
+    <string name="terms_conditions2">TERMS &amp; CONDITIONS</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="ok">OK</string>
+    <string name="minus">-</string>
+    <string name="_1">1</string>
+    <string name="plus">+</string>
+    <string name="get_quote">Get Quote</string>
+    <string name="MRP">MRP   \u20B9</string>
+    <string name="show_more">Show More</string>
+    <string name="product_details">Medicine Overview</string>
+
+    <string name="dummy_text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+        The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using \'Content here, content here\',
+        making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text,
+        and a search for \'lorem ipsum\' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes
+        by accident, sometimes on purpose (injected humour and the like).It is a long established fact that a reader will be distracted by the readable
+        content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,
+        as opposed to using \'Content here, content here\', making it look like readable English. Many desktop publishing packages and web page editors
+        now use Lorem Ipsum as their default model text, and a search for \'lorem ipsum\' will uncover many web sites still in their infancy.
+        Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</string>
+    <string name="show_less">Show less</string>
+    <string name="medicine_detail">Medicine Detail</string>
+    <string name="place_order">Place Order</string>
+    <string name="order_details">Order Details</string>
+
+    <string name="invalid_landmark">Please enter valid landmark.</string>
+    <string name="empty_landmark">Please enter landmark.</string>
+    <string name="invalid_address">Please enter valid address.</string>
+    <string name="empty_address">Please enter address.</string>
+    <string name="invalid_city">Please enter valid city.</string>
+    <string name="empty_city">Please enter city.</string>
+    <string name="invalid_pincode">Please enter valid pincode.</string>
+    <string name="empty_pincode">Please enter pincode.</string>
+
+
+</resources>

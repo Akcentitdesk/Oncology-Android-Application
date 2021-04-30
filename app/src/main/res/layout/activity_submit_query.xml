@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent"
+        tools:context=".ui.SubmitQuery">
+
+        <include
+            android:id="@+id/menuBar"
+            layout="@layout/toolbar" />
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/mainLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/menuBar"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorAccent"
+                    android:padding="@dimen/_15sdp">
+
+                    <ImageView
+                        android:id="@+id/ivhead"
+                        android:layout_width="@dimen/_90sdp"
+                        android:layout_height="@dimen/_90sdp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginBottom="@dimen/_30sdp"
+                        android:elevation="@dimen/_2sdp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/opinion" />
+
+
+                    <TextView
+                        android:id="@+id/head"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:layout_toStartOf="@+id/ivhead"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="Tell us more about your condition"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_16ssp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/head"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:layout_marginBottom="@dimen/_30sdp"
+                        android:layout_toStartOf="@+id/ivhead"
+                        android:fontFamily="@font/roboto_regular"
+                        android:letterSpacing=".05"
+                        android:lineSpacingExtra="@dimen/_2sdp"
+                        android:text="One of our care manager will reach out to guide you with your case."
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_10ssp" />
+
+
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginTop="-30dp"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:layout_marginBottom="@dimen/_30sdp"
+                    android:background="@drawable/back_white"
+                    android:elevation="@dimen/_2sdp"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_15sdp">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:fontFamily="@font/roboto_regular"
+                        android:gravity="center"
+                        android:letterSpacing=".05"
+                        android:lineSpacingExtra="@dimen/_2sdp"
+                        android:text="In order to suggest you the best Oncologist for your case, we need the following information"
+                        android:textColor="@color/lightBlack"
+                        android:textSize="@dimen/_12ssp" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_20sdp">
+
+                        <TextView
+                            android:id="@+id/tv1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_medium"
+                            android:gravity="center"
+                            android:letterSpacing=".05"
+                            android:lineSpacingExtra="@dimen/_2sdp"
+                            android:text="What is the type of cancer?"
+                            android:textColor="@color/lightBlack"
+                            android:textSize="@dimen/_12ssp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@+id/tv1"
+                            android:fontFamily="@font/roboto_medium"
+                            android:gravity="center"
+                            android:letterSpacing=".05"
+                            android:lineSpacingExtra="@dimen/_2sdp"
+                            android:text="*"
+                            android:textColor="@color/colorRed"
+                            android:textSize="@dimen/_12ssp" />
+
+
+                        <androidx.appcompat.widget.AppCompatSpinner
+                            android:id="@+id/spinnerType"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_35sdp"
+                            android:layout_below="@+id/tv1"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:background="@drawable/border_gray"
+                            android:padding="@dimen/_5sdp" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_15sdp">
+
+                        <TextView
+                            android:id="@+id/tv2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_medium"
+                            android:gravity="center"
+                            android:letterSpacing=".05"
+                            android:lineSpacingExtra="@dimen/_2sdp"
+                            android:text="What is the stage of cancer?"
+                            android:textColor="@color/lightBlack"
+                            android:textSize="@dimen/_12ssp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@+id/tv2"
+                            android:fontFamily="@font/roboto_medium"
+                            android:gravity="center"
+                            android:letterSpacing=".05"
+                            android:lineSpacingExtra="@dimen/_2sdp"
+                            android:text="*"
+                            android:textColor="@color/colorRed"
+                            android:textSize="@dimen/_12ssp" />
+
+
+                        <Spinner
+                            android:id="@+id/spinnerStage"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_35sdp"
+                            android:layout_below="@+id/tv2"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:background="@drawable/border_gray"
+                            android:padding="@dimen/_5sdp" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_15sdp">
+
+                        <TextView
+                            android:id="@+id/tv3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_medium"
+                            android:gravity="center"
+                            android:letterSpacing=".05"
+                            android:lineSpacingExtra="@dimen/_2sdp"
+                            android:text="What is the patient's general condition?"
+                            android:textColor="@color/lightBlack"
+                            android:textSize="@dimen/_12ssp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@+id/tv3"
+                            android:fontFamily="@font/roboto_medium"
+                            android:gravity="center"
+                            android:letterSpacing=".05"
+                            android:lineSpacingExtra="@dimen/_2sdp"
+                            android:text="*"
+                            android:textColor="@color/colorRed"
+                            android:textSize="@dimen/_12ssp" />
+
+
+                        <Spinner
+                            android:id="@+id/spinnerPatientCondition"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_35sdp"
+                            android:layout_below="@+id/tv3"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:background="@drawable/border_gray"
+                            android:padding="@dimen/_5sdp" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_20sdp">
+
+                        <TextView
+                            android:id="@+id/tvtreatment"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_medium"
+                            android:gravity="center"
+                            android:letterSpacing=".05"
+                            android:lineSpacingExtra="@dimen/_2sdp"
+                            android:text="Select treatment(s) received so far"
+                            android:textColor="@color/lightBlack"
+                            android:textSize="@dimen/_12ssp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@+id/tvtreatment"
+                            android:fontFamily="@font/roboto_medium"
+                            android:gravity="center"
+                            android:letterSpacing=".05"
+                            android:lineSpacingExtra="@dimen/_2sdp"
+                            android:text="*"
+                            android:textColor="@color/colorRed"
+                            android:textSize="@dimen/_12ssp" />
+
+
+                        <LinearLayout
+                            android:id="@+id/options"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tvtreatment"
+                            android:layout_marginTop="@dimen/_7sdp"
+                            android:weightSum="1">
+
+                            <CheckBox
+                                android:id="@+id/check_chemo"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".4"
+                                android:buttonTint="@color/colorAccent"
+                                android:fontFamily="@font/roboto_regular"
+                                android:text="Chemotherapy"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_10ssp" />
+
+                            <CheckBox
+                                android:id="@+id/check_surgery"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".3"
+                                android:buttonTint="@color/colorAccent"
+                                android:fontFamily="@font/roboto_regular"
+                                android:text="Surgery"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_10ssp" />
+
+                            <CheckBox
+                                android:id="@+id/check_radiation"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight=".3"
+                                android:buttonTint="@color/colorAccent"
+                                android:fontFamily="@font/roboto_regular"
+                                android:gravity="center"
+                                android:text="Radiation"
+                                android:textColor="@color/lightBlack"
+                                android:textSize="@dimen/_10ssp" />
+
+
+                        </LinearLayout>
+
+                        <CheckBox
+                            android:id="@+id/check_none"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/options"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_marginBottom="@dimen/_10sdp"
+                            android:buttonTint="@color/colorAccent"
+                            android:fontFamily="@font/roboto_regular"
+                            android:text="Treatment not yet started"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_11ssp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/llupload"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_3sdp"
+                        android:background="@drawable/back_transparent"
+                        android:elevation="@dimen/_2sdp"
+                        android:padding="@dimen/_5sdp">
+
+                        <ImageView
+                            android:id="@+id/ivupload"
+                            android:layout_width="@dimen/_30sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:background="@drawable/round_main"
+                            android:padding="@dimen/_5sdp"
+                            android:src="@drawable/upload"
+                            app:tint="@color/white" />
+
+                        <TextView
+                            android:id="@+id/uploadreport"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="@dimen/_15sdp"
+                            android:layout_toEndOf="@+id/ivupload"
+                            android:fontFamily="@font/roboto_medium"
+                            android:gravity="center"
+                            android:letterSpacing=".05"
+                            android:lineSpacingExtra="@dimen/_2sdp"
+                            android:text="Upload Reports"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="@dimen/_12ssp" />
+
+                    </RelativeLayout>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvreports"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone" />
+
+
+                    <TextView
+                        android:id="@+id/btnSubmit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:background="@drawable/button_second_main"
+                        android:fontFamily="@font/roboto_medium"
+                        android:gravity="center"
+                        android:paddingStart="@dimen/_40sdp"
+                        android:paddingTop="@dimen/_9sdp"
+                        android:paddingEnd="@dimen/_40sdp"
+                        android:paddingBottom="@dimen/_9sdp"
+                        android:text="@string/Continue"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/_11ssp" />
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:background="@color/colorAccent"
+                    android:elevation="@dimen/_2sdp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_15sdp">
+
+                    <TextView
+                        android:id="@+id/intrested"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="Talk to a care manager"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_11ssp" />
+
+                    <ImageView
+                        android:id="@+id/iv_care"
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_below="@+id/intrested"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:src="@drawable/customer_support"
+                        app:tint="@color/white" />
+
+                    <TextView
+                        android:id="@+id/contact_us"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/iv_care"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:fontFamily="@font/roboto_regular"
+                        android:gravity="center"
+                        android:letterSpacing=".03"
+                        android:lineSpacingExtra="@dimen/_2sdp"
+                        android:text="Talk to our customer care to get relevant answers to all your questions and for help in planning your treatment"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_10ssp" />
+
+                    <TextView
+                        android:id="@+id/btnContactUs"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/contact_us"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:background="@drawable/button_second_main"
+                        android:fontFamily="@font/roboto_medium"
+                        android:gravity="center"
+                        android:letterSpacing=".03"
+                        android:paddingStart="@dimen/_12sdp"
+                        android:paddingTop="@dimen/_5sdp"
+                        android:paddingEnd="@dimen/_12sdp"
+                        android:paddingBottom="@dimen/_5sdp"
+                        android:text="Contact Us"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/_10ssp" />
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </RelativeLayout>
+</layout>

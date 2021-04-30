@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/menubar"
+            layout="@layout/toolbar" />
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/mainLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <RelativeLayout
+                    android:id="@+id/llTop"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_150sdp"
+                    android:background="@drawable/background"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/head"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:gravity="center"
+                        android:lineSpacingExtra="@dimen/_2sdp"
+                        android:text="Search your medicines"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_18ssp" />
+
+                    <TextView
+                        android:id="@+id/sub_head"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/head"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/roboto_regular"
+                        android:gravity="center"
+                        android:lineSpacingExtra="@dimen/_1sdp"
+                        android:paddingTop="@dimen/_5sdp"
+                        android:text="Find and order"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_14ssp" />
+
+                    <RelativeLayout
+                        android:id="@+id/llSearchBar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/sub_head"
+                        android:layout_margin="@dimen/_15sdp"
+                        android:background="@drawable/back_white"
+                        android:elevation="@dimen/_2sdp"
+                        android:padding="@dimen/_10sdp">
+
+                        <ImageView
+                            android:id="@+id/ivsearch"
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_20sdp"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:src="@drawable/ic_search2"
+                            app:tint="@color/darkGray" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center"
+                            android:layout_toEndOf="@+id/ivsearch"
+                            android:fontFamily="@font/roboto_regular"
+                            android:lineSpacingExtra="@dimen/_1sdp"
+                            android:paddingStart="@dimen/_10sdp"
+                            android:text="Search for medicines here..."
+                            android:textColor="@color/darkGray"
+                            android:textSize="@dimen/_12ssp" />
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/llTop"
+                    android:layout_margin="@dimen/_20sdp">
+
+                    <TextView
+                        android:id="@+id/title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/_25sdp"
+                        android:layout_toStartOf="@+id/ivdata"
+                        android:fontFamily="@font/roboto_medium"
+                        android:letterSpacing="0.03"
+                        android:lineSpacingExtra="@dimen/_5sdp"
+                        android:text="Easy steps to order Your medicnes"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_18ssp" />
+
+                    <TextView
+                        android:id="@+id/desc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/title"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/roboto_bold"
+                        android:gravity="center"
+                        android:letterSpacing="0.02"
+                        android:lineSpacingExtra="@dimen/_1sdp"
+                        android:paddingTop="@dimen/_5sdp"
+                        android:text="Your medicnes"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_16ssp"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/ivdata"
+                        android:layout_width="@dimen/_150sdp"
+                        android:layout_height="@dimen/_120sdp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:paddingStart="@dimen/_10sdp"
+                        android:paddingTop="@dimen/_10sdp"
+                        android:paddingBottom="@dimen/_10sdp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/steps" />
+
+                    <RelativeLayout
+                        android:id="@+id/ll1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ivdata"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/_10sdp">
+
+                        <ImageView
+                            android:id="@+id/iv1"
+                            android:layout_width="@dimen/_17sdp"
+                            android:layout_height="@dimen/_17sdp"
+                            android:layout_marginTop="@dimen/_15sdp"
+                            android:src="@drawable/check"
+                            app:tint="@color/colorAccent" />
+
+                        <TextView
+                            android:id="@+id/tv1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/_15sdp"
+                            android:layout_toEndOf="@+id/iv1"
+                            android:fontFamily="@font/roboto_regular"
+                            android:gravity="center"
+                            android:letterSpacing="0.03"
+                            android:paddingStart="@dimen/_10sdp"
+                            android:text="Search your medicine"
+                            android:textColor="@color/lightBlack"
+                            android:textSize="@dimen/_13ssp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/ll2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ll1"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/_5sdp">
+
+                        <ImageView
+                            android:id="@+id/iv2"
+                            android:layout_width="@dimen/_17sdp"
+                            android:layout_height="@dimen/_17sdp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:src="@drawable/check"
+                            app:tint="@color/colorAccent" />
+
+                        <TextView
+                            android:id="@+id/tv2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_toEndOf="@+id/iv2"
+                            android:fontFamily="@font/roboto_regular"
+                            android:gravity="center"
+                            android:letterSpacing="0.03"
+                            android:paddingStart="@dimen/_10sdp"
+                            android:paddingTop="@dimen/_5sdp"
+                            android:text="Add your details"
+                            android:textColor="@color/lightBlack"
+                            android:textSize="@dimen/_13ssp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/ll3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ll2"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/_5sdp">
+
+                        <ImageView
+                            android:id="@+id/iv3"
+                            android:layout_width="@dimen/_17sdp"
+                            android:layout_height="@dimen/_17sdp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:src="@drawable/check"
+                            app:tint="@color/colorAccent" />
+
+                        <TextView
+                            android:id="@+id/tv3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_toEndOf="@+id/iv3"
+                            android:fontFamily="@font/roboto_regular"
+                            android:gravity="center"
+                            android:letterSpacing="0.03"
+                            android:paddingStart="@dimen/_10sdp"
+                            android:paddingTop="@dimen/_5sdp"
+                            android:text="Verify your mobile number"
+                            android:textColor="@color/lightBlack"
+                            android:textSize="@dimen/_13ssp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/ll4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ll3"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/_5sdp">
+
+                        <ImageView
+                            android:id="@+id/iv4"
+                            android:layout_width="@dimen/_17sdp"
+                            android:layout_height="@dimen/_17sdp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:src="@drawable/check"
+                            app:tint="@color/colorAccent" />
+
+                        <TextView
+                            android:id="@+id/tv4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_toEndOf="@+id/iv4"
+                            android:fontFamily="@font/roboto_regular"
+                            android:gravity="center"
+                            android:letterSpacing="0.03"
+                            android:paddingStart="@dimen/_10sdp"
+                            android:paddingTop="@dimen/_5sdp"
+                            android:text="Get Medicines at your doorstep"
+                            android:textColor="@color/lightBlack"
+                            android:textSize="@dimen/_13ssp" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+</layout>

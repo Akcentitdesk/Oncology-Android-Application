@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/coordinatorLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.labs.ScheduleDetail">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorWhite"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/menubar"
+                layout="@layout/toolbar" />
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/menubar"
+                android:fillViewport="true"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/llDoctorData"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:padding="@dimen/_15sdp">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/ivDoctor"
+                            android:layout_width="@dimen/_45sdp"
+                            android:layout_height="@dimen/_45sdp"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            android:src="@drawable/doc1"
+                            app:civ_border_color="@color/color_cccccc"
+                            app:civ_border_width="1dp" />
+
+                        <TextView
+                            android:id="@+id/tvDoctorName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_toEndOf="@+id/ivDoctor"
+                            android:fontFamily="@font/roboto_medium"
+                            android:text=""
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/_13ssp" />
+
+
+                        <TextView
+                            android:id="@+id/tvDocData"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tvDoctorName"
+                            android:layout_toEndOf="@+id/ivDoctor"
+                            android:fontFamily="@font/roboto_regular"
+                            android:text=""
+                            android:textColor="@color/lightBlack"
+                            android:textSize="@dimen/_11ssp" />
+
+
+                        <RelativeLayout
+                            android:id="@+id/select_location"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/ivDoctor"
+                            android:layout_marginTop="@dimen/_20sdp"
+                            android:background="@drawable/border_gray"
+                            android:elevation="@dimen/_2sdp"
+                            android:padding="@dimen/_10sdp">
+
+                            <ImageView
+                                android:id="@+id/location"
+                                android:layout_width="@dimen/_15sdp"
+                                android:layout_height="@dimen/_15sdp"
+                                android:src="@drawable/ic_location"
+                                app:tint="@color/transparent_cccccc" />
+
+                            <TextView
+                                android:id="@+id/tvLocationName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginEnd="@dimen/_5sdp"
+                                android:layout_toStartOf="@+id/dropdown"
+                                android:layout_toEndOf="@+id/location"
+                                android:fontFamily="@font/roboto_regular"
+                                android:paddingStart="@dimen/_5sdp"
+                                android:text=""
+                                android:textColor="@color/colorBlack"
+                                android:textSize="@dimen/_10ssp"
+                                tools:ignore="RtlSymmetry,UnusedAttribute" />
+
+                            <TextView
+                                android:id="@+id/tvClinicFees"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/tvLocationName"
+                                android:layout_marginStart="@dimen/_5sdp"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:layout_marginEnd="@dimen/_5sdp"
+                                android:layout_toEndOf="@+id/location"
+                                android:fontFamily="@font/roboto_regular"
+                                android:text=""
+                                android:textColor="@color/colorBlack"
+                                android:textSize="@dimen/_10ssp" />
+
+                            <ImageView
+                                android:id="@+id/dropdown"
+                                android:layout_width="@dimen/_18sdp"
+                                android:layout_height="@dimen/_18sdp"
+                                android:layout_alignParentEnd="true"
+                                android:padding="@dimen/_3sdp"
+                                android:src="@drawable/down_arrow"
+                                android:visibility="gone" />
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/llSelectDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp">
+
+                        <RelativeLayout
+                            android:id="@+id/select_date"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/transparent_purple"
+                            android:elevation="@dimen/_2sdp"
+                            android:padding="@dimen/_10sdp">
+
+                            <ImageView
+                                android:id="@+id/appointment"
+                                android:layout_width="@dimen/_15sdp"
+                                android:layout_height="@dimen/_15sdp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="@dimen/_10sdp"
+                                android:src="@drawable/appointment"
+                                app:tint="@color/colorAccent" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_gravity="center"
+                                android:layout_toEndOf="@+id/appointment"
+                                android:fontFamily="@font/roboto_medium"
+                                android:paddingStart="@dimen/_10sdp"
+                                android:text="@string/select_date"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="@dimen/_12ssp"
+                                tools:ignore="RtlSymmetry,UnusedAttribute" />
+                        </RelativeLayout>
+
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rvDate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/select_date"
+                            android:layout_centerHorizontal="true"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="@dimen/_15sdp"
+                            android:layout_marginTop="@dimen/_20sdp"
+                            android:layout_marginBottom="@dimen/_20sdp" />
+
+                        <include
+                            android:id="@+id/empty_layout"
+                            layout="@layout/empty_page" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llTimeSlot"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/transparent_purple"
+                            android:elevation="@dimen/_2sdp"
+                            android:padding="@dimen/_10sdp">
+
+                            <ImageView
+                                android:id="@+id/time"
+                                android:layout_width="@dimen/_15sdp"
+                                android:layout_height="@dimen/_15sdp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="@dimen/_10sdp"
+                                android:src="@drawable/clock"
+                                app:tint="@color/colorAccent" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_gravity="center"
+                                android:layout_toEndOf="@+id/time"
+                                android:fontFamily="@font/roboto_medium"
+                                android:paddingStart="@dimen/_10sdp"
+                                android:text="Select Time Slot"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="@dimen/_12ssp"
+                                tools:ignore="RtlSymmetry,UnusedAttribute" />
+                        </RelativeLayout>
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rvTimeSlot"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/_10sdp"
+                            android:padding="@dimen/_5sdp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+
+            <TextView
+                android:id="@+id/btnSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:background="@drawable/button_main"
+                android:fontFamily="@font/roboto_medium"
+                android:gravity="center"
+                android:paddingTop="@dimen/_9sdp"
+                android:paddingBottom="@dimen/_9sdp"
+                android:text="@string/Continue"
+                android:textAllCaps="true"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_12ssp"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</layout>

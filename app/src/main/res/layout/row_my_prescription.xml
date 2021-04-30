@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="RtlSymmetry,UnusedAttribute,ContentDescription,UseCompoundDrawables">
+
+    <RelativeLayout
+        android:id="@+id/llRoot"
+        android:layout_width="@dimen/_90sdp"
+        android:layout_height="@dimen/_112sdp"
+        android:layout_margin="@dimen/_5sdp"
+        android:background="@drawable/border_gray">
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/ivPrescription"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/_2sdp"
+                android:scaleType="fitXY"
+                android:src="@drawable/image_placeholder" />
+
+            <CheckBox
+                android:id="@+id/ivCheck"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:layout_marginEnd="@dimen/_3sdp"
+                android:buttonTint="@color/colorAccent"
+                android:gravity="center"
+                android:visibility="gone" />
+            <ImageView
+                android:id="@+id/ivCross"
+                android:layout_width="@dimen/_17sdp"
+                android:layout_height="@dimen/_17sdp"
+                android:layout_gravity="end"
+                android:src="@drawable/cross"
+                tools:ignore="ContentDescription" />
+
+
+        </FrameLayout>
+
+    </RelativeLayout>
+</layout>

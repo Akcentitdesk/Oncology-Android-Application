@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#371757</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#371757</color>
+    <color name="teal_700">#371757</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="color_read_more">#0062cc</color>
+
+
+    <color name="colorAccent">#371757</color>
+    <color name="colorPurple">#371757</color>
+    <color name="colorYellow">#F3C03A</color>
+    <color name="colorOrange">#F75E1C</color>
+
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorRed">#D22215</color>D84643
+    <color name="darkGray">#808080</color>
+    <color name="silver">#C0C0C0</color>
+    <color name="light_silver">#FAFAFA</color>
+    <color name="color_cccccc">#CCCCCC</color>
+    <color name="transparent_cccccc">#b4CCCCCC</color>
+    <color name="transparent">#F8F8F8</color>
+    <color name="transparent_">#b4F8F8F8</color>
+    <color name="lightGray">#96989A</color>
+    <color name="lightBlack">#595859</color>
+    <color name="background">#dddddd</color>
+    <color name="transparent_silver">#b4C0C0C0</color>
+    <color name="transparent_purple">#EDEDFC</color>
+    <color name="transparent_yellow">#FBF9EB</color>
+    <color name="dark_green">#008000</color>
+    <color name="error_color">#ff1717</color>
+    <color name="rating_poor">#D30000</color>
+    <color name="rating_fair">#FFA500</color>
+    <color name="rating_average">#FCD12A</color>
+    <color name="rating_good">#00B089</color>
+    <color name="rating_excellent">#008000</color>
+    <integer-array name="androidPastelcolors">
+        <item>@color/rc_17</item>
+        <item>@color/rc_18</item>
+        <item>@color/rc_20</item>
+        <item>@color/rc_19</item>
+        <item>@color/rc_21</item>
+        <item>@color/rb_16</item>
+        <item>@color/rc_22</item>
+        <item>@color/rc_23</item>
+        <item>@color/rc_24</item>
+        <item>@color/rc_25</item>
+        <item>@color/rc_26</item>
+        <item>@color/rc_27</item>
+
+    </integer-array>
+
+    <item name="rc_15" type="color">#E6F0F0</item>
+    <item name="rb_16" type="color">#FFDFD3</item>
+    <item name="rc_17" type="color">#FCF9F2</item>
+    <item name="rc_18" type="color">#D8DDFE</item>
+    <item name="rc_19" type="color">#F8E2DF</item>
+    <item name="rc_20" type="color">#E6F7F1</item>
+    <item name="rc_21" type="color">#FFFBF2</item>
+    <item name="rc_22" type="color">#FAFADC</item>
+    <item name="rc_23" type="color">#DFEDDD</item>
+    <item name="rc_24" type="color">#D8E9F7</item>
+    <item name="rc_25" type="color">#EEFBDD</item>
+    <item name="rc_26" type="color">#FFFFE6</item>
+    <item name="rc_27" type="color">#FEFFF5</item>
+
+</resources>

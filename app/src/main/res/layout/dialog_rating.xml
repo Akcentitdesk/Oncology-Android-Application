@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite">
+
+        <include
+            android:id="@+id/menuBar"
+            layout="@layout/toolbar" />
+
+        <ScrollView
+            android:id="@+id/llRootDialog"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/menuBar"
+            android:layout_marginBottom="@dimen/_50sdp"
+            android:background="@color/colorWhite">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:orientation="vertical"
+                android:padding="@dimen/_7sdp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/ivDoc"
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="@dimen/_80sdp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:src="@drawable/doc1"
+                    app:civ_border_color="@color/color_cccccc"
+                    app:civ_border_width="1dp" />
+
+                <ImageView
+                    android:id="@+id/ivArticle"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_130sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:scaleType="fitXY"
+                    android:src="@color/transparent"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:gravity="center"
+                    android:lineSpacingExtra="@dimen/_1sdp"
+                    android:text=""
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/_14ssp" />
+
+
+                <androidx.appcompat.widget.AppCompatRatingBar
+                    android:id="@+id/ratingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:numStars="5"
+                    android:stepSize="1"
+                    android:theme="@style/RatingBar" />
+
+                <TextView
+                    android:id="@+id/tvRatingStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/roboto_regular"
+                    android:text=""
+                    android:textColor="@color/lightGray"
+                    android:textSize="@dimen/_12ssp" />
+
+                <RelativeLayout
+                    android:id="@+id/heading"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_30sdp">
+
+                    <TextView
+                        android:id="@+id/tvheading2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="@string/write_your_review_here"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/_11ssp" />
+
+                    <TextView
+                        android:id="@+id/max_word_limit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="Max 450 Characters"
+                        android:textColor="@color/silver"
+                        android:textSize="@dimen/_11ssp" />
+
+                </RelativeLayout>
+
+                <EditText
+                    android:id="@+id/etmessage"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_150sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@drawable/border_gray"
+                    android:fontFamily="@font/roboto_regular"
+                    android:gravity="top"
+                    android:hint="@string/please_write_product_review_here"
+                    android:imeOptions="actionDone"
+                    android:inputType="textMultiLine|textCapSentences|textAutoCorrect"
+                    android:maxLength="450"
+                    android:padding="@dimen/_6sdp"
+                    android:textColor="@color/lightBlack"
+                    android:textColorHint="@color/silver"
+                    android:textSize="@dimen/_11ssp"
+                    tools:ignore="Autofill" />
+
+
+                <TextView
+                    android:id="@+id/tvReviewError"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_regular"
+                    android:paddingStart="@dimen/_5sdp"
+                    android:paddingTop="@dimen/_2sdp"
+                    android:text=""
+                    android:textColor="@color/error_color"
+                    android:textSize="@dimen/_9ssp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tvDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:fontFamily="@font/roboto_regular"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:text=""
+                    android:textColor="@color/lightGray"
+                    android:textSize="@dimen/_11ssp"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <TextView
+
+            android:id="@+id/btnShareExperience"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:background="@drawable/button_main"
+            android:fontFamily="@font/roboto_medium"
+            android:gravity="center"
+            android:paddingTop="@dimen/_8sdp"
+            android:paddingBottom="@dimen/_8sdp"
+            android:text="@string/submit"
+            android:textAllCaps="true"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_11ssp" />
+
+        <include
+            android:id="@+id/empty_layout"
+            layout="@layout/empty_page" />
+
+        <include
+            android:id="@+id/shimmerEffect"
+            layout="@layout/shimmer_dummy_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/menuBar"
+            android:visibility="gone" />
+    </RelativeLayout>
+</layout>
