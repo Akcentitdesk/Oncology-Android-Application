@@ -1,4 +1,4 @@
-package com.indiaoncology.ui;
+package com.indiaoncology.ui.others;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
@@ -56,9 +56,11 @@ public class SearchActivity extends AppCompatActivity implements View.OnClickLis
         requestFocus();
         if (from.equalsIgnoreCase(AppConstant.MEDICINE)) {
             binding.tvFrequentlySearchHeading.setText("Recently Searched Medicines");
+            binding.etSearchBar.setHint("Search medicines here...");
             getRecentDocSearchApi("medicine");
         } else {
             binding.tvFrequentlySearchHeading.setText("Recently Searched Doctors");
+            binding.etSearchBar.setHint("Search doctors here...");
             getRecentDocSearchApi("doctor");
         }
 

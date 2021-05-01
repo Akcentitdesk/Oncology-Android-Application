@@ -1,9 +1,8 @@
-package com.indiaoncology.ui;
+package com.indiaoncology.ui.medicine;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
-import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import android.app.Activity;
 import android.content.Context;
@@ -12,19 +11,15 @@ import android.os.Bundle;
 import android.text.Html;
 import android.view.View;
 
-import com.facebook.appevents.suggestedevents.ViewOnClickListener;
 import com.indiaoncology.R;
-import com.indiaoncology.adaptar.ProductImageAdapter;
-import com.indiaoncology.databinding.ActivityDoctorProfileBinding;
+import com.indiaoncology.adaptar.images.ProductImageAdapter;
 import com.indiaoncology.databinding.ActivityMedicineDetailBinding;
-import com.indiaoncology.model.doctor.DoctorData;
-import com.indiaoncology.model.doctor.DoctorResponse;
 import com.indiaoncology.model.medicine.MedicineResponse;
 import com.indiaoncology.service.Api;
 import com.indiaoncology.service.BaseCallback;
 import com.indiaoncology.service.BaseResponse;
 import com.indiaoncology.service.RequestController;
-import com.indiaoncology.ui.doctor.DoctorProfile;
+import com.indiaoncology.ui.others.SearchActivity;
 import com.indiaoncology.utils.ActivityController;
 import com.indiaoncology.utils.AppConstant;
 import com.indiaoncology.utils.CommonUtils;

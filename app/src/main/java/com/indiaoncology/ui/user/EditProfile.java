@@ -10,7 +10,6 @@ import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.View;
-import android.widget.Toast;
 
 import com.indiaoncology.R;
 import com.indiaoncology.databinding.ActivityEditProfileBinding;
@@ -19,7 +18,7 @@ import com.indiaoncology.model.user.LoginData;
 import com.indiaoncology.model.user.UserBaseResponse;
 import com.indiaoncology.service.Api;
 import com.indiaoncology.service.RequestController;
-import com.indiaoncology.ui.Dashboard;
+import com.indiaoncology.ui.startAndDashboard.Dashboard;
 import com.indiaoncology.utils.ActivityController;
 import com.indiaoncology.utils.AppConstant;
 import com.indiaoncology.utils.CommonUtils;

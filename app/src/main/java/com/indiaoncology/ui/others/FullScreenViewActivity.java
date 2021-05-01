@@ -1,4 +1,4 @@
-package com.indiaoncology.ui;
+package com.indiaoncology.ui.others;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -10,7 +10,7 @@ import androidx.databinding.DataBindingUtil;
 
 
 import com.indiaoncology.R;
-import com.indiaoncology.adaptar.FullScreenImageAdapter;
+import com.indiaoncology.adaptar.images.FullScreenImageAdapter;
 import com.indiaoncology.databinding.ActivityFullScreenViewBinding;
 
 import java.util.ArrayList;

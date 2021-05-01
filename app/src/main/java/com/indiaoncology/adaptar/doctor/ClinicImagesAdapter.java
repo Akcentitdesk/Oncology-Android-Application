@@ -14,7 +14,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.indiaoncology.R;
 import com.indiaoncology.databinding.LayoutViewMoreBinding;
 import com.indiaoncology.databinding.RowClinicImagesBinding;
-import com.indiaoncology.ui.FullScreenViewActivity;
+import com.indiaoncology.ui.others.FullScreenViewActivity;
 import com.indiaoncology.utils.AppConstant;
 import com.indiaoncology.utils.CommonUtils;
 

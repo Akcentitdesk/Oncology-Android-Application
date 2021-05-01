@@ -1,4 +1,4 @@
-package com.indiaoncology.ui;
+package com.indiaoncology.ui.startAndDashboard;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;

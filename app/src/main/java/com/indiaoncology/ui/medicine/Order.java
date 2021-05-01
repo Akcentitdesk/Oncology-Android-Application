@@ -1,4 +1,4 @@
-package com.indiaoncology.ui;
+package com.indiaoncology.ui.medicine;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
@@ -14,7 +14,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 
 import com.indiaoncology.R;
-import com.indiaoncology.databinding.ActivityMedicineDetailBinding;
 import com.indiaoncology.databinding.ActivityOrderBinding;
 import com.indiaoncology.databinding.PopupAddReminderBinding;
 import com.indiaoncology.model.address.CheckPincodeBaseResponse;
@@ -22,6 +21,7 @@ import com.indiaoncology.service.Api;
 import com.indiaoncology.service.BaseCallback;
 import com.indiaoncology.service.BaseResponse;
 import com.indiaoncology.service.RequestController;
+import com.indiaoncology.ui.startAndDashboard.Dashboard;
 import com.indiaoncology.utils.ActivityController;
 import com.indiaoncology.utils.AppConstant;
 import com.indiaoncology.utils.CommonUtils;

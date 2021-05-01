@@ -1,4 +1,4 @@
-package com.indiaoncology.ui;
+package com.indiaoncology.ui.startAndDashboard;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -24,14 +24,10 @@ import com.indiaoncology.fragment.FragmentProfile;
 import com.indiaoncology.listener.onFragmentChange;
 import com.indiaoncology.model.user.LoginData;
 import com.indiaoncology.service.Api;
-import com.indiaoncology.service.BaseCallback;
-import com.indiaoncology.service.BaseResponse;
 import com.indiaoncology.service.RequestController;
 import com.indiaoncology.utils.AppConstant;
 import com.indiaoncology.utils.CommonUtils;
 import com.indiaoncology.utils.SharedPref;
-
-import java.util.HashMap;
 
 import retrofit2.Call;
 import retrofit2.Callback;

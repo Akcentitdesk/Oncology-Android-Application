@@ -2,6 +2,7 @@ package com.indiaoncology.service;
 
 
 import com.indiaoncology.model.PrescriptionResponse;
+import com.indiaoncology.model.medicine.MedicineListResponse;
 import com.indiaoncology.model.address.CheckPincodeBaseResponse;
 import com.indiaoncology.model.blogDetail.BlogDetailResponse;
 import com.indiaoncology.model.dashboard.IndexResponse;
@@ -115,8 +116,7 @@ public interface Api {
     // Time slot
     @FormUrlEncoded
     @POST("gettimeslot.php")
-    Call<LocationResponse> getTimeSlot(@Field("user_id") String user_id, @Field("doctor_id") String doctor_id,
-                                       @Field("location_id") String location_id);
+    Call<LocationResponse> getTimeSlot(@Field("user_id") String user_id, @Field("doctor_id") String doctor_id, @Field("location_id") String location_id);
 
     // get reviews
     @FormUrlEncoded
@@ -126,34 +126,23 @@ public interface Api {
     // add review
     @FormUrlEncoded
     @POST("adddoctorreview.php")
-    Call<BaseResponse> addDoctorReview(@Field("user_id") String user_id,
-                                       @Field("doctor_id") String doctor_id,
-                                       @Field("rating") float user_rating,
-                                       @Field("review") String user_review);
+    Call<BaseResponse> addDoctorReview(@Field("user_id") String user_id, @Field("doctor_id") String doctor_id, @Field("rating") float user_rating, @Field("review") String user_review);
 
 
     // fetch details for deep link (TODO)
     @FormUrlEncoded
     @POST("getdetail.php")
-    Call<FeedbackResponse> getProfileDetails(@Field("id") String id,
-                                             @Field("type") String type);
+    Call<FeedbackResponse> getProfileDetails(@Field("id") String id, @Field("type") String type);
 
 
     /*  PATIENT SECTION  */
     @FormUrlEncoded
     @POST("addpatient.php")
-    Call<BaseResponse> addPatient(@Field("user_id") String user_id,
-                                  @Field("name") String name,
-                                  @Field("mobile") String mobile,
-                                  @Field("email") String email,
-                                  @Field("age") String age,
-                                  @Field("gender") String gender,
-                                  @Field("is_self") String value);
+    Call<BaseResponse> addPatient(@Field("user_id") String user_id, @Field("name") String name, @Field("mobile") String mobile, @Field("email") String email, @Field("age") String age, @Field("gender") String gender, @Field("is_self") String value);
 
     @FormUrlEncoded
     @POST("deletepatient.php")
-    Call<BaseResponse> deletePatient(@Field("user_id") String user_id,
-                                     @Field("patient_id") String patient_id);
+    Call<BaseResponse> deletePatient(@Field("user_id") String user_id, @Field("patient_id") String patient_id);
 
     @FormUrlEncoded
     @POST("getpatient.php")
@@ -161,13 +150,7 @@ public interface Api {
 
     @FormUrlEncoded
     @POST("updatepatient.php")
-    Call<BaseResponse> updatePatient(@Field("user_id") String user_id,
-                                     @Field("patient_id") String patient_id,
-                                     @Field("name") String name,
-                                     @Field("mobile") String mobile,
-                                     @Field("email") String email,
-                                     @Field("age") String age,
-                                     @Field("gender") String gender);
+    Call<BaseResponse> updatePatient(@Field("user_id") String user_id, @Field("patient_id") String patient_id, @Field("name") String name, @Field("mobile") String mobile, @Field("email") String email, @Field("age") String age, @Field("gender") String gender);
 
     /*  APPOINTMENT SECTION  */
     @FormUrlEncoded
@@ -257,6 +240,7 @@ public interface Api {
     Call<TypeResponse> getbanner(@Field("type") String type);
 
 
+    /*  online opinion */
     @Multipart
     @POST("upload.php")
     Call<PrescriptionResponse> uploadPrescriptions(@Part("user_id") RequestBody user_id,
@@ -266,14 +250,17 @@ public interface Api {
     @POST("enquiry.php")
     Call<BaseResponse> enquiry(@FieldMap HashMap<String, Object> map);
 
-    @FormUrlEncoded
-    @POST("order.php")
-    Call<BaseResponse> order(@FieldMap HashMap<String, String> map);
 
+    // callback request
     @FormUrlEncoded
     @POST("request_callback.php")
     Call<BaseResponse> requestCallback(@Field("user_id") String user_id);
 
+
+    /*    Medicine section */
+    @FormUrlEncoded
+    @POST("medicinelist.php")
+    Call<MedicineListResponse> getList(@Field("page") int page);
 
     @FormUrlEncoded
     @POST("medicine.php")
@@ -282,5 +269,9 @@ public interface Api {
     @FormUrlEncoded
     @POST("checkpincode.php")
     Call<CheckPincodeBaseResponse> checkPincode(@Field("pincode") String pincode);
+
+    @FormUrlEncoded
+    @POST("order.php")
+    Call<BaseResponse> order(@FieldMap HashMap<String, String> map);
 
 }

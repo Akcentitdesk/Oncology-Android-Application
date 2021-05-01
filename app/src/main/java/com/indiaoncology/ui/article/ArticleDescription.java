@@ -6,10 +6,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
-import android.text.Editable;
 import android.text.Html;
-import android.text.TextWatcher;
-import android.view.LayoutInflater;
 import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -33,18 +30,16 @@ import com.indiaoncology.service.Api;
 import com.indiaoncology.service.BaseCallback;
 import com.indiaoncology.service.BaseResponse;
 import com.indiaoncology.service.RequestController;
-import com.indiaoncology.ui.Dashboard;
+import com.indiaoncology.ui.startAndDashboard.Dashboard;
 import com.indiaoncology.ui.review.AddReview;
 import com.indiaoncology.ui.review.AllReviews;
 import com.indiaoncology.utils.ActivityController;
 import com.indiaoncology.utils.AppConstant;
 import com.indiaoncology.utils.CommonUtils;
-import com.indiaoncology.utils.DialogUtils;
 import com.indiaoncology.utils.SharedPref;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Objects;
 
 import retrofit2.Call;
 

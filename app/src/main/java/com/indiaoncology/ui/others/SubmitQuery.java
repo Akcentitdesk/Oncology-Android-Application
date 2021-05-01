@@ -1,4 +1,4 @@
-package com.indiaoncology.ui;
+package com.indiaoncology.ui.others;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -22,15 +22,11 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.CheckBox;
-import android.widget.CompoundButton;
 import android.widget.Spinner;
-import android.widget.Toast;
 
-import com.facebook.share.Share;
 import com.indiaoncology.R;
 import com.indiaoncology.adaptar.prescription.PrescriptionAdapter;
 import com.indiaoncology.databinding.ActivitySubmitQueryBinding;
-import com.indiaoncology.databinding.DialogBinding;
 import com.indiaoncology.databinding.LayoutTakepictureBinding;
 import com.indiaoncology.databinding.PopupAddReminderBinding;
 import com.indiaoncology.model.PrescriptionData;
@@ -42,6 +38,7 @@ import com.indiaoncology.service.BaseCallback;
 import com.indiaoncology.service.BaseResponse;
 import com.indiaoncology.service.RequestController;
 import com.indiaoncology.ui.patient.SelectPatient;
+import com.indiaoncology.ui.startAndDashboard.Dashboard;
 import com.indiaoncology.utils.ActivityController;
 import com.indiaoncology.utils.AppConstant;
 import com.indiaoncology.utils.CommonUtils;

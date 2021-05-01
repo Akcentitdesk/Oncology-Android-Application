@@ -1,4 +1,4 @@
-package com.indiaoncology.ui;
+package com.indiaoncology.ui.others;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
@@ -14,7 +14,6 @@ import android.webkit.WebViewClient;
 import com.indiaoncology.R;
 import com.indiaoncology.databinding.ActivityTypeDetailScreenBinding;
 import com.indiaoncology.databinding.ShimmerDummyLayoutBinding;
-import com.indiaoncology.utils.AppConstant;
 import com.indiaoncology.utils.CommonUtils;
 
 import java.util.Objects;

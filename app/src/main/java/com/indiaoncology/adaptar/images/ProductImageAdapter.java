@@ -1,4 +1,4 @@
-package com.indiaoncology.adaptar;
+package com.indiaoncology.adaptar.images;
 
 import android.content.Context;
 import android.content.Intent;
@@ -15,7 +15,7 @@ import androidx.viewpager.widget.PagerAdapter;
 
 import com.bumptech.glide.Glide;
 import com.indiaoncology.R;
-import com.indiaoncology.ui.FullScreenViewActivity;
+import com.indiaoncology.ui.others.FullScreenViewActivity;
 import com.indiaoncology.utils.AppConstant;
 
 import java.util.ArrayList;

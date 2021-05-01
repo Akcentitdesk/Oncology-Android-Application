@@ -96,6 +96,7 @@
                 </RelativeLayout>
 
                 <RelativeLayout
+                    android:id="@+id/llSecond"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/llTop"
@@ -272,6 +273,26 @@
                     </RelativeLayout>
                 </RelativeLayout>
 
+                <TextView
+                    android:id="@+id/btnviewAll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/llSecond"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/_20sdp"
+                    android:background="@drawable/button_second_main"
+                    android:elevation="@dimen/_2sdp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:gravity="center"
+                    android:letterSpacing=".03"
+                    android:paddingStart="@dimen/_15sdp"
+                    android:paddingTop="@dimen/_7sdp"
+                    android:paddingEnd="@dimen/_15sdp"
+                    android:paddingBottom="@dimen/_7sdp"
+                    android:text="View All Medicines"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_11ssp" />
 
             </RelativeLayout>
         </androidx.core.widget.NestedScrollView>

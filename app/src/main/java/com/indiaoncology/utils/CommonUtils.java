@@ -39,7 +39,7 @@ import com.comm100.livechat.VisitorClientInterface;
 import com.google.android.material.snackbar.Snackbar;
 import com.indiaoncology.R;
 import com.indiaoncology.databinding.ToolbarBinding;
-import com.indiaoncology.ui.SearchActivity;
+import com.indiaoncology.ui.others.SearchActivity;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;

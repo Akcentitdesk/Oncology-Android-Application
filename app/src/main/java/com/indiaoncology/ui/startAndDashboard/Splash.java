@@ -1,4 +1,4 @@
-package com.indiaoncology.ui;
+package com.indiaoncology.ui.startAndDashboard;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;

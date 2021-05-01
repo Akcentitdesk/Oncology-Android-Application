@@ -15,7 +15,7 @@ import android.os.StrictMode;
 import android.provider.MediaStore;
 
 
-import com.indiaoncology.ui.SubmitQuery;
+import com.indiaoncology.ui.others.SubmitQuery;
 
 import java.io.File;
 import java.io.FileInputStream;

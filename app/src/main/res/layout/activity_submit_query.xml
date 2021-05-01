@@ -7,7 +7,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/transparent"
-        tools:context=".ui.SubmitQuery">
+        tools:context=".ui.others.SubmitQuery">
 
         <include
             android:id="@+id/menuBar"

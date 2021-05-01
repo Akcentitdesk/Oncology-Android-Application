@@ -18,7 +18,7 @@ import android.view.ViewGroup;
 import com.comm100.livechat.ChatActivity;
 import com.comm100.livechat.VisitorClientInterface;
 import com.indiaoncology.R;
-import com.indiaoncology.adaptar.AndroidImageAdapter;
+import com.indiaoncology.adaptar.images.AndroidImageAdapter;
 import com.indiaoncology.adaptar.dashboard.DashboardAdapter;
 import com.indiaoncology.adaptar.doctor.CategoryAdapter;
 import com.indiaoncology.databinding.FragmentDoctorBinding;
@@ -30,9 +30,9 @@ import com.indiaoncology.service.Api;
 import com.indiaoncology.service.BaseCallback;
 import com.indiaoncology.service.BaseResponse;
 import com.indiaoncology.service.RequestController;
-import com.indiaoncology.ui.SearchActivity;
+import com.indiaoncology.ui.others.SearchActivity;
 
-import com.indiaoncology.ui.SubmitQuery;
+import com.indiaoncology.ui.others.SubmitQuery;
 import com.indiaoncology.utils.ActivityController;
 import com.indiaoncology.utils.CommonUtils;
 

@@ -13,10 +13,9 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.indiaoncology.R;
 import com.indiaoncology.databinding.RowMyPrescriptionBinding;
-import com.indiaoncology.listener.OnCheckSelectedListener;
 import com.indiaoncology.listener.OnSelectedListener;
 import com.indiaoncology.model.PrescriptionData;
-import com.indiaoncology.ui.FullScreenViewActivity;
+import com.indiaoncology.ui.others.FullScreenViewActivity;
 import com.indiaoncology.utils.AppConstant;
 import com.indiaoncology.utils.CommonUtils;
 

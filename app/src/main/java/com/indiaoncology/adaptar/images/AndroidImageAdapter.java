@@ -1,4 +1,4 @@
-package com.indiaoncology.adaptar;
+package com.indiaoncology.adaptar.images;
 
 import android.content.Context;
 import android.graphics.drawable.Drawable;

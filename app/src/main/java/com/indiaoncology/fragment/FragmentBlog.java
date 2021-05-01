@@ -1,7 +1,6 @@
 package com.indiaoncology.fragment;
 
 import android.content.Context;
-import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.databinding.DataBindingUtil;
@@ -11,12 +10,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.comm100.livechat.ChatActivity;
-import com.comm100.livechat.VisitorClientInterface;
 import com.indiaoncology.R;
 import com.indiaoncology.databinding.FragmentBlogBinding;
-import com.indiaoncology.ui.SearchActivity;
-import com.indiaoncology.ui.SubmitQuery;
+import com.indiaoncology.ui.medicine.Listing;
+import com.indiaoncology.ui.others.SearchActivity;
 import com.indiaoncology.utils.ActivityController;
 import com.indiaoncology.utils.AppConstant;
 
@@ -46,11 +43,15 @@ public class FragmentBlog extends Fragment implements View.OnClickListener {
         binding.menubar.ivRight.setVisibility(View.GONE);
         binding.menubar.ivSecond.setVisibility(View.GONE);
         binding.llSearchBar.setOnClickListener(this);
+        binding.btnviewAll.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
+            case R.id.btnviewAll:
+                ActivityController.startActivity(context, Listing.class);
+                break;
             case R.id.llSearchBar:
                 Bundle bundle = new Bundle();
                 bundle.putString(AppConstant.FROM, AppConstant.MEDICINE);

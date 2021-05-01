@@ -1,7 +1,6 @@
 package com.indiaoncology.adaptar;
 
 import android.app.Activity;
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -17,9 +16,7 @@ import com.indiaoncology.databinding.ItemProgressBinding;
 import com.indiaoncology.databinding.RowTypeListBinding;
 import com.indiaoncology.databinding.RowTypesBinding;
 import com.indiaoncology.model.type.Data;
-import com.indiaoncology.ui.Redirect;
-import com.indiaoncology.ui.review.AllReviews;
-import com.indiaoncology.utils.ActivityController;
+import com.indiaoncology.ui.others.Redirect;
 import com.indiaoncology.utils.AppConstant;
 import com.indiaoncology.utils.CommonUtils;
 

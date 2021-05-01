@@ -28,7 +28,7 @@ import androidx.localbroadcastmanager.content.LocalBroadcastManager;
 import com.google.firebase.messaging.FirebaseMessagingService;
 import com.google.firebase.messaging.RemoteMessage;
 import com.indiaoncology.R;
-import com.indiaoncology.ui.Splash;
+import com.indiaoncology.ui.startAndDashboard.Splash;
 
 import org.json.JSONException;
 import org.json.JSONObject;

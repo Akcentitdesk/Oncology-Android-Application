@@ -1,26 +1,29 @@
-package com.indiaoncology.ui;
+package com.indiaoncology.ui.others;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 
 import android.app.Activity;
+import android.app.Dialog;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.view.LayoutInflater;
 import android.view.View;
 
 import com.indiaoncology.R;
-import com.indiaoncology.databinding.ActivityAddPatientBinding;
 import com.indiaoncology.databinding.ActivityContactBinding;
+import com.indiaoncology.databinding.PopupAddReminderBinding;
 import com.indiaoncology.service.Api;
 import com.indiaoncology.service.BaseCallback;
 import com.indiaoncology.service.BaseResponse;
 import com.indiaoncology.service.RequestController;
-import com.indiaoncology.ui.patient.AddPatient;
+import com.indiaoncology.ui.startAndDashboard.Dashboard;
 import com.indiaoncology.utils.AppConstant;
 import com.indiaoncology.utils.CommonUtils;
+import com.indiaoncology.utils.DialogUtils;
 import com.indiaoncology.utils.ProgressDialogUtils;
 import com.indiaoncology.utils.RegexUtils;
 import com.indiaoncology.utils.SharedPref;
@@ -48,7 +51,20 @@ public class Contact extends AppCompatActivity implements View.OnClickListener {
         setViews();
 
     }
+    private void openResponseDialog(String heading, String subheading) {
+        final PopupAddReminderBinding dataBinding = DataBindingUtil.inflate(LayoutInflater.from(context), R.layout.popup_add_reminder, null, false);
+        Dialog dialogSubmit = DialogUtils.createDialog(context, dataBinding.getRoot(), 0);
+        dialogSubmit.setCancelable(false);
+        dataBinding.heading.setText(heading);
+        dataBinding.subHeading.setText(subheading);
+        dataBinding.btnOk.setOnClickListener(v -> {
+            dialogSubmit.dismiss();
+            Intent intent = new Intent(context, Dashboard.class);
+            startActivity(intent);
+            finishAffinity();
+        });
 
+    }
     private void setViews() {
         binding.btnSubmit.setOnClickListener(this);
         binding.tvEmail.setText(SharedPref.getStringPreferences(context, AppConstant.COMPANY_EMAIL));
@@ -176,10 +192,9 @@ public class Contact extends AppCompatActivity implements View.OnClickListener {
                         ProgressDialogUtils.dismiss();
                         if (response != null) {
                             if (response.getStatus().equals("1")) {
-                                CommonUtils.showToastShort(context, response.getMessage());
-                                Intent intent = new Intent(context, Dashboard.class);
-                                startActivity(intent);
-                                finishAffinity();
+                                openResponseDialog(response.getMessage(), "We have received your request, one of our Care Managers will give you a call to help you further.");
+
+                                // CommonUtils.showToastShort(context, response.getMessage());
                             }
                         }
                     }

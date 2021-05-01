@@ -13,7 +13,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.indiaoncology.R;
 import com.indiaoncology.databinding.RowRecentSearchDoctorsBinding;
 import com.indiaoncology.model.search.SearchingResultData;
-import com.indiaoncology.ui.MedicineDetail;
+import com.indiaoncology.ui.medicine.MedicineDetail;
 import com.indiaoncology.ui.doctor.DoctorProfile;
 import com.indiaoncology.utils.AppConstant;
 import com.indiaoncology.utils.CommonUtils;

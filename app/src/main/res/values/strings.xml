@@ -178,6 +178,7 @@
     <string name="empty_city">Please enter city.</string>
     <string name="invalid_pincode">Please enter valid pincode.</string>
     <string name="empty_pincode">Please enter pincode.</string>
+    <string name="medicine">Medicines</string>
 
 
 </resources>
